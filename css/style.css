@@ -8,15 +8,16 @@ body {
 .body1{
   width: 100%;
   flex: 1;
-  height: 100vh;
-  line-height: 100vh
+  height: 50vh;
+  line-height: 50vh
 }
 .body2{
   width: 100%;
   flex: 3;
   height: 100vh;
   vertical-align: middle;
-  padding-top: 200px
+  padding-top: 50px;
+  padding-left: 10px
 }
 
 .home{
@@ -36,8 +37,7 @@ body {
 #bodybox{
   display: flex;
   width: 100%;
-  height: 100vh;
-  padding-top: 20px
+  height: 50vh;
 }
 #question{
   font-size: 36px
@@ -51,7 +51,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 input[type=submit]:hover {
@@ -61,16 +61,20 @@ input[type=submit]:hover {
   height: 100vh
 }
 .resultbox h1{
-  text-align: center;
   margin-top: 100px;
   font-family: "Muli", sans-serif;
-  color: white;
   font-size: 36px;
   font-weight: 400;
-  border-bottom: 5px solid #16A5DD;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  background-color: #050708;
+  text-align: center;
+}
+.skew-div{
+	margin-top: 100px;
+	height: 6px;
+	transform: skewY(-4deg);
+	border: solid 1px #9d9d9d;
+	border-right-style: none;
+	border-left-style: none;
+
 }
 p, li, input, select, button {
   font-family: "Muli", sans-serif;
