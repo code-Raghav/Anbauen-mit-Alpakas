@@ -119,7 +119,7 @@
     fade: true
   });
 
-  // Client Slider 
+  // Client Slider
   $('.category-slider').slick({
     dots: false,
     slidesToShow: 5,
@@ -158,7 +158,7 @@
     ]
   });
 
-  // trending-ads-slide 
+  // trending-ads-slide
 
   $('.trending-ads-slide').slick({
     dots: false,
@@ -228,3 +228,14 @@
 
 
 })(jQuery);
+
+
+function displaybox(){
+document.getElementById('resultboxid').style.display = "block";
+}
+
+$(".btn").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".resultbox").offset().top},
+        'slow');
+});
