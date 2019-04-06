@@ -234,7 +234,12 @@ function displaybox(){
 document.getElementById('resultboxid').style.display = "block";
 }
 
-$(".btn").click(function() {
+$(".btnCrop").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".resultbox").offset().top},
+        'slow');
+});
+$(".btnState").click(function() {
     $('html,body').animate({
         scrollTop: $(".resultbox").offset().top},
         'slow');
