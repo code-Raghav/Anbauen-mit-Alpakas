@@ -44,18 +44,18 @@ body {
 }
 input[type=submit] {
   width: 50%;
-  background-color: #00cec9;
+  background-color: #16A5DD;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 50px
+  margin-top: 80px;
 }
 
 input[type=submit]:hover {
-  background-color: #81ecec;
+  background-color: #00cec9;
 }
 .resultbox{
   height: 100vh
@@ -64,16 +64,13 @@ input[type=submit]:hover {
   text-align: center;
   margin-top: 100px;
   font-family: "Muli", sans-serif;
-  color: #666;
+  color: white;
   font-size: 36px;
   font-weight: 400;
   border-bottom: 5px solid #16A5DD;
   padding-bottom: 10px;
   padding-top: 10px;
-  color: #FFFFFF;
   background-color: #050708;
-  font-family: 'Raleway';
-  font-weight: 600
 }
 p, li, input, select, button {
   font-family: "Muli", sans-serif;
