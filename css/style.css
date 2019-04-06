@@ -5,6 +5,42 @@ body {
   font-family: "Muli", sans-serif;
 }
 
+.body1{
+  width: 100%;
+  flex: 1
+}
+.body2{
+  width: 100%;
+  flex: 3;
+  padding-top: 100px
+}
+
+#bodybox{
+  display: flex;
+  width: 100%;
+  height: 50vh;
+}
+#question{
+  font-size: 36px
+}
+.resultbox{
+  height: 100vh
+}
+.resultbox h1{
+  text-align: center;
+  margin-top: 100px;
+  font-family: "Muli", sans-serif;
+  color: #666;
+  font-size: 36px;
+  font-weight: 400;
+  border-bottom: 5px solid #16A5DD;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #FFFFFF;
+  background-color: #050708;
+  font-family: 'Raleway';
+  font-weight: 600
+}
 p, li, input, select, button {
   font-family: "Muli", sans-serif;
   color: #666;
