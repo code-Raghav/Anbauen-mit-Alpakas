@@ -6,6 +6,7 @@
     <link href="css/style2.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <script type="text/javascript" src="js/script2.js"></script>
 
   </head>
@@ -15,18 +16,20 @@
       <h1 id="logo">Anbauen mit Alpakas</h1>
       <div class=""></div>
 
-      <a id="link4" style="text-align: center;padding-top: 10px" href="https://www.instagram.com/jugendhackt/">
-        <img src="instagram.png" alt="" style="width: 50px;">
-      </a>
+      <div class="" style="margin-top: 30px">
+        <a id="link4" style="text-align: center;padding-top: 20px" href="https://www.instagram.com/jugendhackt/" target="_blank" >
+          <img src="instagram.png" alt="" style="width: 30px;">
+        </a>
 
-      <a id="link4" style="text-align: center; height: 80px;padding-top: 10px" href="http://facebook.com/jugendhackt" >
-        <img src="facebook.png" alt="" style="width: 50px">
-      </a>
+        <a id="link4" style="text-align: center; height: 80px;padding-top: 20px" href="http://facebook.com/jugendhackt" target="_blank"  >
+          <img src="facebook.png" alt="" style="width: 30px">
+        </a>
+      </div>
+
       <div class="">
 
       </div>
     </nav>
-
 
     <div class="container">
       <img class="mySlides" src="css/img1.jpg" style="width:100%">
@@ -35,7 +38,12 @@
       <img class="mySlides" src="css/img4.jpg" style="width:100%">
     </div>
 
-
+    <span class="text" >
+        <h1>Finden Sie das beste Anbauprodukt für Sie</h1>
+            <p>Diese Website hilft Ihnen, alles über Landwirtschaft zu lernen.
+            Geben Sie einfach Ort oder bevorzugtes Anbauprodukt ein.
+            Na los! Probieren Sie selbst.</p>
+    </span>
 
     <div class="section2">
       <div class="box1">
@@ -44,23 +52,22 @@
 
       <div class="box2">
         <div class="sub_box1">
-          <p id="question"><h1>Welche Ernte möchten Sie anbauen?</h1></p><br><br>
-          <label for="country"><h2>Ernte:</center></h2></label>
-          <select id="country" name="country"><center>
+          <p id="question">Welche Ernte möchten Sie anbauen?</p>
+          <label for="country">Ernte</label>
+          <select id="country" name="country">
             <option value="australia" id="cropOption">Weizen</option>
             <option value="canada" id="cropOption">Reis</option>
             <option value="usa" id="cropOption">Mais</option>
             <option value="usa" id="cropOption">Hülsenfrüchte</option>
-
           </select>
-          <input type="submit" value="Absenden" onclick="displaycrops()" class="btnCrop">
+          <input type="submit" value="Absenden" onclick="displaycrops()" class="btnCrop"  >
         </div>
-        <h1> OR</h1>
+        <h1 style="font-family: Raleway; color: #888; "> ODER</h1>
 
 
         <div class="sub_box2">
           <p id="question">In welcher Region leben Sie?</p>
-          <label for="country"><h2>Region:</h2></label>
+          <label for="country">Region</label>
           <select id="country1" name="country">
             <option value="australia">West Bengal</option>
             <option value="canada">Uttar Pradesh</option>
@@ -71,25 +78,18 @@
         </div>
       </div>
     </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
     <div class="crops" id="crops">
       <table class="blueTable" align="center">
         <tbody>
         <tr>
-        <td id="cr1"><h2>West Bengal</h2></td>
-        <td id="cr2"><h2>Uttar Pradesh</h2></td>
-        <td id="cr3"><h2>Andhra Pradesh</h2></td>
-        <td id="cr4"><h2>Madhya Pradesh</h2></td>
+        <td id="cr1">West Bengal</td>
+        <td id="cr2">Uttar Pradesh</td>
+        <td id="cr3">Andhra Pradesh</td>
+        <td id="cr4">Madhya Pradesh</td>
         </tr>
         <tr>
-        <td id="p1"><h2>percentage</h2></td>
+        <td id="p1">percentage</td>
         <td id="p2">percentage</td>
         <td id="p3">percentage</td>
         <td id="p4">percentage</td>
@@ -98,16 +98,14 @@
       </table>
 
     </div>
-<br>
-
     <div class="states" id="states">
       <table class="blueTable" align="center">
         <tbody>
           <tr>
-            <td id="st1"><h2>Reis</h2> </td>
-            <td id="st2"><h2>Weizen</h2></td>
-            <td id="st3"><h2>Mais</h2></td>
-            <td id="st4"><h2>Hülsenfrüchte</h2></td>
+            <td id="st1">Reis</td>
+            <td id="st2">Weizen</td>
+            <td id="st3">Mais</td>
+            <td id="st4">Hülsenfrüchte</td>
           </tr>
           <tr>
           <td id="pp1"></td>
@@ -118,6 +116,7 @@
         </tbody>
       </table>
     </div>
+
   </body>
   <script type="text/javascript">
   var myIndex = 0;
