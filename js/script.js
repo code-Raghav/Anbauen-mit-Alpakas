@@ -1,6 +1,6 @@
 (function ($) {
   'use strict';
-
+  
   //  Count Up
   function counter() {
     var oTop;
