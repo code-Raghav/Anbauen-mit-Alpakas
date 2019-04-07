@@ -81,7 +81,8 @@ html{
   height: 70vh;
   margin-left: 10vh;
   margin-right: 10vh;
-  border: 2px solid black
+  border: 2px solid black;
+  transition: ease-in 3s
 }
 
 .mySlides{
@@ -197,4 +198,7 @@ table.blueTable tfoot .links a{
   color: #FFFFFF;
   padding: 2px 8px;
   border-radius: 5px;
+}
+.mySlides {display:none;
+  transition: ease-in 3s
 }
