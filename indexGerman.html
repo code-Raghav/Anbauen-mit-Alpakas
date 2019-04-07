@@ -16,13 +16,13 @@
       <h1 id="logo">Anbauen mit Alpakas</h1>
       <div class=""></div>
 
-      <a id="link4" style="text-align: center;" href="https://www.instagram.com/jugendhackt/">
-        <img src="instagram.png" alt="" style="width: 50px;padding-top: 15px">
-      </a>
+      <div id="link4" style="text-align: center;">
+        <img src="instagram.png" alt="" style="width: 50px">
+      </div>
 
-      <a id="link4" style="text-align: center;" href="http://facebook.com/jugendhackt">
-        <img src="facebook.png" alt="" style="width: 65px;padding-top: 8px">
-      </a>
+      <div id="link4" style="text-align: center;">
+        <img src="facebook.png" alt="" style="width: 50px">
+      </div>
     </nav>
     <div class="section1">
       <div class="">
@@ -39,13 +39,15 @@
 
       <div class="box2">
         <div class="sub_box1">
-          <p id="question">Welche Ernte möchten Sie anbauen?</p>
-          <label for="country">Ernte</label>
-          <select id="country" name="country">
-          <option value="australia">Wheat</option>
-          <option value="canada">Rice</option>
-          <option value="usa">Barley</option>
+          <p id="question">Was möchten Sie anbauen?</p>
+          <label for="country">Anbauprodukt</label>
+
+          <select id="crop" name="crop">
+            <option value="0">Wheat</option>
+            <option value="1">Rice</option>
+            <option value="2">Barley</option>
           </select>
+
           <input type="submit" value="Absenden" onclick="displaycrops()" class="btnCrop"  >
         </div>
 
@@ -53,11 +55,13 @@
         <div class="sub_box2">
           <p id="question">Wo wohnen Sie?</p>
           <label for="country">Land</label>
+
           <select id="country" name="country">
-          <option value="australia">Punjab</option>
-          <option value="canada">UP</option>
-          <option value="usa">Haryana</option>
+            <option value="australia">Punjab</option>
+            <option value="canada">UP</option>
+            <option value="usa">Haryana</option>
           </select>
+
           <input type="submit" value="Absenden" onclick="displaystates()" class="btnStates"  >
         </div>
       </div>
@@ -80,8 +84,8 @@
         </tr>
         </tbody>
       </table>
-
     </div>
+    
     <div class="states" id="states">
       <table class="blueTable">
         <tbody>
