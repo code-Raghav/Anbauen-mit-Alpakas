@@ -29,10 +29,10 @@
 
 
     <div class="container">
-      <img class="mySlides" src="css/img1.jpg" style="align: middle">
-      <img class="mySlides" src="img2.jpg">
-      <img class="mySlides" src="img3.jpg">
-      <img class="mySlides" src="img4.jpg">
+      <img class="mySlides" src="css/img1.jpg" style="width:100%">
+      <img class="mySlides" src="css/img2.jpg" style="width:100%">
+      <img class="mySlides" src="css/img3.jpg" style="width:100%">
+      <img class="mySlides" src="css/img4.jpg" style="width:100%">
     </div>
 
 
@@ -40,11 +40,6 @@
     <div class="section2">
       <div class="box1">
         <img src="Background.png" alt="images">
-        <title>Anbauen mit Alpakas</title>
-          <p>Finden Sie das beste Anbauprodukt für Sie.<br>
-            Diese Website hilft Ihnen, alles über Landwirtschaft zu lernen.<br>
-            Geben Sie einfach Ort oder bevorzugtes Anbauprodukt ein.<br>
-            Na los! Probieren Sie selbst.</p>
       </div>
 
       <div class="box2">
@@ -114,4 +109,20 @@
       </table>
     </div>
   </body>
+  <script type="text/javascript">
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+  }
+  </script>
 </html>
