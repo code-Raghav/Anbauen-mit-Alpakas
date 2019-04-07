@@ -39,7 +39,7 @@ function displaycrops(){
     document.getElementById('p4').innerHTML = "45%";
   }
 
-document.getElementById('states').style.display = "none";
+  document.getElementById('states').style.display = "none";
 }
 
 
@@ -90,5 +90,5 @@ function displaystates(){
       document.getElementById('pp4').innerHTML = "45%";
     }
 
-    document.getElementById('country').style.display == "none"
+    document.getElementById('crops').style.display = "none";
   }
