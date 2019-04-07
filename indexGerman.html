@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Kaushan+Script" rel="stylesheet">
     <script type="text/javascript" src="js/script2.js"></script>
-    <script src="jquery-3.3.1.min.js"></script>
 
   </head>
   <body>
@@ -42,9 +41,10 @@
           <p id="question">Welche Ernte möchten Sie anbauen?</p>
           <label for="country">Ernte</label>
           <select id="country" name="country">
-          <option value="australia">Wheat</option>
-          <option value="canada">Rice</option>
-          <option value="usa">Barley</option>
+            <option value="australia" id="cropOption">Wheat</option>
+            <option value="canada" id="cropOption">Rice</option>
+            <option value="usa" id="cropOption">Maize</option>
+            <option value="usa" id="cropOption">Pulses</option>
           </select>
           <input type="submit" value="Absenden" onclick="displaycrops()" class="btnCrop"  >
         </div>
@@ -54,9 +54,9 @@
           <p id="question">Wo wohnen Sie?</p>
           <label for="country">Land</label>
           <select id="country" name="country">
-          <option value="australia">Punjab</option>
-          <option value="canada">UP</option>
-          <option value="usa">Haryana</option>
+            <option value="australia">Punjab</option>
+            <option value="canada">UP</option>
+            <option value="usa">Haryana</option>
           </select>
           <input type="submit" value="Absenden" onclick="displaystates()" class="btnStates"  >
         </div>
@@ -67,10 +67,10 @@
       <table class="blueTable">
         <tbody>
         <tr>
-        <td>crop</td>
-        <td>crop</td>
-        <td>crop</td>
-        <td>crop</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
         </tr>
         <tr>
         <td>percentage</td>
