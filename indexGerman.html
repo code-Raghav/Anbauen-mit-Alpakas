@@ -41,22 +41,23 @@
           <p id="question">Welche Ernte möchten Sie anbauen?</p>
           <label for="country">Ernte</label>
           <select id="country" name="country">
-            <option value="australia" id="cropOption">Wheat</option>
-            <option value="canada" id="cropOption">Rice</option>
-            <option value="usa" id="cropOption">Maize</option>
-            <option value="usa" id="cropOption">Pulses</option>
+            <option value="australia" id="cropOption">Weizen</option>
+            <option value="canada" id="cropOption">Reis</option>
+            <option value="usa" id="cropOption">Mais</option>
+            <option value="usa" id="cropOption">Hülsenfrüchte</option>
           </select>
           <input type="submit" value="Absenden" onclick="displaycrops()" class="btnCrop"  >
         </div>
 
 
         <div class="sub_box2">
-          <p id="question">Wo wohnen Sie?</p>
-          <label for="country">Land</label>
-          <select id="country" name="country">
-            <option value="australia">Punjab</option>
-            <option value="canada">UP</option>
-            <option value="usa">Haryana</option>
+          <p id="question">In welcher Region lebst du?</p>
+          <label for="country">Region</label>
+          <select id="country1" name="country">
+            <option value="australia">Wet</option>
+            <option value="canada">Semi Wet</option>
+            <option value="usa">Warm and Dry</option>
+            <option value="usa">Cool and Dry</option>
           </select>
           <input type="submit" value="Absenden" onclick="displaystates()" class="btnStates"  >
         </div>
@@ -67,16 +68,16 @@
       <table class="blueTable">
         <tbody>
         <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td id="cr1">West Bengal</td>
+        <td id="cr2">Uttar Pradesh</td>
+        <td id="cr3">Andhra Pradesh</td>
+        <td id="cr4">Madhya Pradesh</td>
         </tr>
         <tr>
-        <td>percentage</td>
-        <td>percentage</td>
-        <td>percentage</td>
-        <td>percentage</td>
+        <td id="p1">percentage</td>
+        <td id="p2">percentage</td>
+        <td id="p3">percentage</td>
+        <td id="p4">percentage</td>
         </tr>
         </tbody>
       </table>
@@ -85,18 +86,18 @@
     <div class="states" id="states">
       <table class="blueTable">
         <tbody>
-        <tr>
-        <td>state</td>
-        <td>state</td>
-        <td>state</td>
-        <td>state</td>
-        </tr>
-        <tr>
-        <td>percentage</td>
-        <td>percentage</td>
-        <td>percentage</td>
-        <td>percentage</td>
-        </tr>
+          <tr>
+          <td id="st1">Reis </td>
+          <td id="st2">Weizen</td>
+          <td id="st3">Mais</td>
+          <td id="st4">Hülsenfrüchte</td>
+          </tr>
+          <tr>
+          <td id="pp1"></td>
+          <td id="pp2"></td>
+          <td id="pp3"></td>
+          <td id="pp4"></td>
+          </tr>
         </tbody>
       </table>
     </div>

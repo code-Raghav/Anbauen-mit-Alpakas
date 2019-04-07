@@ -68,12 +68,9 @@ html{
   color: black;
   height: 100vh
 }
-
 .section1 div{
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
   height: 100vh;
-  line-height: 100vh
 }
 .section1 div p{
   color: black;
@@ -81,6 +78,7 @@ html{
   color: #666;
   font-size: 26px;
   font-weight: 400;
+  padding-top:
 }
 
 .section2{
