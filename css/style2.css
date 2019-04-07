@@ -156,6 +156,7 @@ select {
 }
 
 table.blueTable {
+  font-family: "Muli", sans-serif;
   border: 1px solid #1C6EA4;
   background-color: #EEEEEE;
   width: 80%;
@@ -169,7 +170,7 @@ table.blueTable td, table.blueTable th {
   padding: 3px 2px;
 }
 table.blueTable tbody td {
-  font-size: 13px;
+  font-size: 36px;
 }
 table.blueTable thead {
   background: #1C6EA4;
@@ -184,6 +185,8 @@ table.blueTable thead th {
 }
 table.blueTable thead th:first-child {
   border-left: none;
+  font-family: "Muli", sans-serif;
+
 }
 
 table.blueTable tfoot td {
@@ -201,4 +204,17 @@ table.blueTable tfoot .links a{
 }
 .mySlides {display:none;
   transition: ease-in 3s
+}
+.custom1{
+  font-size: 36px;
+  font-family: "Muli", sans-serif;
+  color: #888;
+  font-size: 36px;
+  font-weight: 400;
+}
+.custom2{
+  font-size: 25px;
+  font-family: "Muli", sans-serif;
+  color: #888;
+  font-weight: 400;
 }

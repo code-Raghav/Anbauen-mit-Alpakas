@@ -15,24 +15,22 @@
       <h1 id="logo">Anbauen mit Alpakas</h1>
       <div class=""></div>
 
-      <a id="link4" style="text-align: center;padding-top: 10px" href="https://www.instagram.com/jugendhackt/">
-        <img src="instagram.png" alt="" style="width: 50px;">
+      <a id="link4" style="text-align: center;" href="https://www.instagram.com/jugendhackt/">
+        <img src="instagram.png" alt="" style="width: 50px;padding-top: 15px">
       </a>
 
-      <a id="link4" style="text-align: center; height: 80px;padding-top: 10px" href="http://facebook.com/jugendhackt" >
-        <img src="facebook.png" alt="" style="width: 50px">
+      <a id="link4" style="text-align: center;" href="http://facebook.com/jugendhackt">
+        <img src="facebook.png" alt="" style="width: 65px;padding-top: 8px">
       </a>
-      <div class="">
-
-      </div>
     </nav>
-
-
-    <div class="container">
-      <img class="mySlides" src="css/img1.jpg" style="width:100%">
-      <img class="mySlides" src="css/img2.jpg" style="width:100%">
-      <img class="mySlides" src="css/img3.jpg" style="width:100%">
-      <img class="mySlides" src="css/img4.jpg" style="width:100%">
+    <div class="section1">
+      <div class="">
+        <title>Anbauen mit Alpakas</title>
+          <p>Finden Sie das beste Anbauprodukt für Sie.<br>
+            Diese Website hilft Ihnen, alles über Landwirtschaft zu lernen.<br>
+            Geben Sie einfach Ort oder bevorzugtes Anbauprodukt ein.<br>
+            Na los! Probieren Sie selbst.</p>
+      </div>
     </div>
 
 
@@ -45,21 +43,21 @@
       <div class="box2">
         <div class="sub_box1">
           <p id="question">Welche Ernte möchten Sie anbauen?</p>
-          <label for="country" style= align:"center">Ernte</label>
-          <select id="country" name="country" align="center">
-            <option value="australia" id="cropOption" align="center">Weizen</option>
-            <option value="canada" id="cropOption"align="center">Reis</option>
-            <option value="usa" id="cropOption"align="center">Mais</option>
-            <option value="usa" id="cropOption"align="center">Hülsenfrüchte</option>
+          <label for="country" class="custom2">Ernte</label>
+          <select id="country" name="country">
+            <option value="australia" id="cropOption">Weizen</option>
+            <option value="canada" id="cropOption">Reis</option>
+            <option value="usa" id="cropOption">Mais</option>
+            <option value="usa" id="cropOption">Hülsenfrüchte</option>
           </select>
-          <input type="submit" value="Absenden" onclick="displaycrops()" class="btnCrop" align="center">
+          <input type="submit" value="Absenden" onclick="displaycrops()" class="btnCrop"  >
         </div>
-        <h1 style="text-align: center;"> OR</h1>
+        <h1 class="custom1" style="text-align: left;"> ODER</h1>
 
 
         <div class="sub_box2">
           <p id="question">In welcher Region leben Sie?</p>
-          <label for="country">Region</label>
+          <label for="country" class="custom2">Region</label>
           <select id="country1" name="country">
             <option value="australia">West Bengal</option>
             <option value="canada">Uttar Pradesh</option>
@@ -70,35 +68,34 @@
         </div>
       </div>
     </div>
-<br>
+
     <div class="crops" id="crops">
-      <table class="blueTable" align="center">
-        <tbody>
-        <tr>
-        <td id="cr1"><h2>West Bengal</h2></td>
-        <td id="cr2"><h2>Uttar Pradesh</h2></td>
-        <td id="cr3"><h2>Andhra Pradesh</h2></td>
-        <td id="cr4"><h2>Madhya Pradesh</h2></td>
-        </tr>
-        <tr>
-        <td id="p1"><h2>percentage</h2></td>
-        <td id="p2">percentage</td>
-        <td id="p3">percentage</td>
-        <td id="p4">percentage</td>
-        </tr>
+      <table class="blueTable">
+        <tbody class = "custom1">
+          <tr>
+              <td id="cr1">West Bengal</td>
+              <td id="cr2">Uttar Pradesh</td>
+              <td id="cr3">Andhra Pradesh</td>
+              <td id="cr4">Madhya Pradesh</td>
+          </tr>
+          <tr>
+            <td id="p1">percentage</td>
+            <td id="p2">percentage</td>
+            <td id="p3">percentage</td>
+            <td id="p4">percentage</td>
+          </tr>
         </tbody>
       </table>
 
     </div>
-    <br>
     <div class="states" id="states">
-      <table class="blueTable" align="center">
-        <tbody>
+      <table class="blueTable">
+        <tbody class = "custom1">
           <tr>
-            <td id="st1"><h2>Reis</h2> </td>
-            <td id="st2"><h2>Weizen</h2></td>
-            <td id="st3"><h2>Mais</h2></td>
-            <td id="st4"><h2>Hülsenfrüchte</h2></td>
+          <td id="st1">Reis </td>
+          <td id="st2">Weizen</td>
+          <td id="st3">Mais</td>
+          <td id="st4">Hülsenfrüchte</td>
           </tr>
           <tr>
           <td id="pp1"></td>
@@ -110,20 +107,4 @@
       </table>
     </div>
   </body>
-  <script type="text/javascript">
-  var myIndex = 0;
-  carousel();
-
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000); // Change image every 2 seconds
-  }
-  </script>
 </html>
