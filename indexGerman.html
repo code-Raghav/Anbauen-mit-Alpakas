@@ -7,21 +7,22 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Kaushan+Script" rel="stylesheet">
     <script type="text/javascript" src="js/script2.js"></script>
-    <script src="jquery-3.3.1.min.js"></script>
 
   </head>
   <body>
     <nav id="navBar" class="topnav">
+
       <h1 id="logo">Anbauen mit Alpakas</h1>
       <div class=""></div>
-      <div id="link4" style="text-align: center;">
-        <img src="instagram.png" alt="" style="width: 50px">
-      </div>
-      <div id="link4" style="text-align: center;">
-        <img src="facebook.png" alt="" style="width: 50px">
-      </div>
-    </nav>
 
+      <a id="link4" style="text-align: center;" href="https://www.instagram.com/jugendhackt/">
+        <img src="instagram.png" alt="" style="width: 50px;padding-top: 15px">
+      </a>
+
+      <a id="link4" style="text-align: center;" href="http://facebook.com/jugendhackt">
+        <img src="facebook.png" alt="" style="width: 65px;padding-top: 8px">
+      </a>
+    </nav>
     <div class="section1">
       <div class="">
           <p>Finde das beste Anbauprodukt für dich</p>
@@ -37,31 +38,27 @@
 
       <div class="box2">
         <div class="sub_box1">
-          <p id="question">Was möchten Sie anbauen?</p>
-          <label for="country">Anbauprodukt</label>
-
-          <select id="crop" name="crop">
-            <option value="0">Reis</option>
-            <option value="1">Weizen</option>
-            <option value="2">Mais</option>
-            <option value="3">Hülsenfrüchte</option>
+          <p id="question">Welche Ernte möchten Sie anbauen?</p>
+          <label for="country">Ernte</label>
+          <select id="country" name="country">
+            <option value="australia" id="cropOption">Wheat</option>
+            <option value="canada" id="cropOption">Rice</option>
+            <option value="usa" id="cropOption">Maize</option>
+            <option value="usa" id="cropOption">Pulses</option>
           </select>
-
           <input type="submit" value="Absenden" onclick="displaycrops()" class="btnCrop"  >
         </div>
 
 
         <div class="sub_box2">
           <p id="question">Wo wohnen Sie?</p>
-          <label for="country">Resion</label>
-
-          <select id="country" name="country">
-            <option value="0">West Bengal</option>
-            <option value="1">Uttar Pradesh</option>
-            <option value="2">Karnataka</option>
-            <option value="3">Madhya Pradesh</option>
+          <label for="country">Land</label>
+          <select id="country1" name="country">
+            <option value="australia">Arid</option>
+            <option value="canada">Semi Arid</option>
+            <option value="usa">Warm and Dry</option>
+            <option value="usa">Cool and Dry</option>
           </select>
-
           <input type="submit" value="Absenden" onclick="displaystates()" class="btnStates"  >
         </div>
       </div>
@@ -71,36 +68,36 @@
       <table class="blueTable">
         <tbody>
         <tr>
-        <td>West Bengal</td>
-        <td>Uttar Pradesh</td>
-        <td>Karnataka</td>
-        <td>Madhya Pradesh</td>
+        <td id="cr1">West Bengal</td>
+        <td id="cr2">Uttar Pradesh</td>
+        <td id="cr3">Andhra Pradesh</td>
+        <td id="cr4">Madhya Pradesh</td>
         </tr>
         <tr>
-        <td id = "per0"></td>
-        <td id = "per1"></td>
-        <td id = "per2"></td>
-        <td id = "per3"></td>
+        <td id="p1">percentage</td>
+        <td id="p2">percentage</td>
+        <td id="p3">percentage</td>
+        <td id="p4">percentage</td>
         </tr>
         </tbody>
       </table>
-    </div>
 
+    </div>
     <div class="states" id="states">
       <table class="blueTable">
         <tbody>
-        <tr>
-        <td>Reis</td>
-        <td>Weizen</td>
-        <td>Mais</td>
-        <td>Hülsenfrüchte</td>
-        </tr>
-        <tr>
-          <td id = "percent0"></td>
-          <td id = "percent1"></td>
-          <td id = "percent2"></td>
-          <td id = "percent3"></td>
-        </tr>
+          <tr>
+          <td id="st1">Rice </td>
+          <td id="st2">Wheat</td>
+          <td id="st3">Maize</td>
+          <td id="st4">Pulses</td>
+          </tr>
+          <tr>
+          <td id="pp1"></td>
+          <td id="pp2"></td>
+          <td id="pp3"></td>
+          <td id="pp4"></td>
+          </tr>
         </tbody>
       </table>
     </div>
