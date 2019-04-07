@@ -1,8 +1,10 @@
 function displaycrops(){
-document.getElementById('crops').style.display = "block";
+  //cropData();
+  document.getElementById('crops').style.display = "block";
 }
 function displaystates(){
-document.getElementById('states').style.display = "block";
+  //locData();
+  document.getElementById('states').style.display = "block";
 }
 
 
@@ -19,11 +21,6 @@ $(".btnState").click(function() {
 });
 
 
-//function displayresult (){
-//  if {
-//    document.getelementById()
-//  }
-//}
 
 //data
 //var data = [[63, 13, 21, 3][24, 57, 16, 3][31, 12,33, 24][17, 22, 16, 45]];
@@ -33,18 +30,20 @@ $(".btnState").click(function() {
 
 //function cropData(){
 //  var ind = document.getElementById('crop').value;
+//  var test = parseInt(ind);
 //  var count = 0;
-//  var crop = locIndex[count];
+//  var crop = locationIndex[count].ind;
 
 //  for each (dataSet in data){
 //    var indNow = cropIndex[count];
-//    document.getElementById(indNow).innerHTML = dataSet[ind];
+//    document.getElementById(indNow).innerHTML = data[count][crop];
 //    count += 1;
 //  }
 //}
 
 //function locData(){
 //  var loc = document.getElementById('country').value;
-//  for each (percent in data[loc])
+//  var test2 = parseInt(loc);
+//  for each (percent in data[test2])
 //  document.getElementById(locNow).innerHTML = percent;
 //}
